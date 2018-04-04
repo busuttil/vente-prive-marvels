@@ -2,8 +2,10 @@
   "name": "vente-prive",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://busuttil.github.io/vente-prive-marvels/",
   "dependencies": {
     "crypto-js": "3.1.9-1",
+    "gh-pages": "^1.1.0",
     "lodash": "^4.17.5",
     "moment": "^2.21.0",
     "npm-run-all": "^4.1.2",
@@ -37,6 +39,8 @@
     "redux-mock-store": "^1.5.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "format": "prettier --single-quote --write 'src/**/*.js'",
