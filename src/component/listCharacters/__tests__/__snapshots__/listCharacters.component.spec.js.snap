@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListCharacters render Character page 1`] = `
+<styled.div>
+  <Character
+    characterId={1}
+    key="1"
+    name="Batman"
+    picture="http://Batman.jpg"
+    urls={Array []}
+  />
+  <Character
+    characterId={2}
+    key="2"
+    name="Superman"
+    picture="http://Superman.jpg"
+    urls={Array []}
+  />
+</styled.div>
+`;
+
+exports[`ListCharacters render ListCharactersWrapper class 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  className="c0"
+/>
+`;

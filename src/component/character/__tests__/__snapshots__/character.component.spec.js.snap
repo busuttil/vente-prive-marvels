@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character render Character page 1`] = `
+<Styled(Link)
+  picture="https//fakeBatman.jpg"
+  to="/"
+>
+  <styled.div>
+    <h1>
+      Batman
+    </h1>
+    <styled.div>
+      <styled.button
+        alt="details"
+        key="http://marvel.com/characters/1/Batman__details"
+        onClick={[Function]}
+        title="details"
+      >
+        <p>
+          details
+        </p>
+      </styled.button>
+      <styled.button
+        alt="comics"
+        key="http://marvel.com/characters/1/Batman__comics"
+        onClick={[Function]}
+        title="comics"
+      >
+        <p>
+          comics
+        </p>
+      </styled.button>
+    </styled.div>
+  </styled.div>
+</Styled(Link)>
+`;
+
+exports[`Character render CharacterCard class 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 25%;
+  height: 250px;
+  margin: 5px;
+  background-image: url(https//fakeBatman.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.c0:hover .sc-bdVaJa,
+.c0:focus .sc-bdVaJa {
+  height: 100px;
+  background-color: #ffffffd9;
+}
+
+.c0:hover .sc-bdVaJa h1,
+.c0:focus .sc-bdVaJa h1 {
+  color: #b50f16;
+}
+
+@media (max-width:1024px) {
+  .c0 {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+<Link
+  className="c0"
+  picture="https//fakeBatman.jpg"
+  replace={false}
+  to="/1"
+/>
+`;
+
+exports[`Character render CharacterDetail class 1`] = `
+.c0 {
+  margin-top: 25px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Character render CharacterInfo class 1`] = `
+.c1 {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  height: 50px;
+  padding-left: 20px;
+  background-color: #b50f16bf;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+}
+
+.c1 h1 {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  color: white;
+}
+
+.eCZgYN:hover .c0,
+.eCZgYN:focus .c0 {
+  height: 100px;
+  background-color: #ffffffd9;
+}
+
+.eCZgYN:hover .c0 h1,
+.eCZgYN:focus .c0 h1 {
+  color: #b50f16;
+}
+
+@media (max-width:1024px) {
+  .c1 h1 {
+    font-size: 16px;
+  }
+}
+
+<div
+  className="c0 c1"
+/>
+`;
