@@ -110,14 +110,14 @@ exports[`Character render CharacterInfo class 1`] = `
   color: white;
 }
 
-.eCZgYN:hover .c0,
-.eCZgYN:focus .c0 {
+.dWoMmv:hover .c0,
+.dWoMmv:focus .c0 {
   height: 100px;
   background-color: #ffffffd9;
 }
 
-.eCZgYN:hover .c0 h1,
-.eCZgYN:focus .c0 h1 {
+.dWoMmv:hover .c0 h1,
+.dWoMmv:focus .c0 h1 {
   color: #b50f16;
 }
 
