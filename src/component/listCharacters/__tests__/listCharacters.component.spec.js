@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ListCharacters from "../listCharacters.component";
-import { ListCharactersWrapper } from "../listCharacters.styles";
+import ListCharacters from '../listCharacters.component';
+import { ListCharactersWrapper } from '../listCharacters.styles';
 
 describe('ListCharacters', () => {
   let props;
@@ -13,16 +13,16 @@ describe('ListCharacters', () => {
         {
           name: 'Batman',
           id: 1,
-          thumbnail: { path: "http://Batman", extension: "jpg" },
-          urls:[]
+          thumbnail: { path: 'http://Batman', extension: 'jpg' },
+          urls: []
         },
         {
           name: 'Superman',
           id: 2,
-          thumbnail: { path: "http://Superman", extension: "jpg" },
-          urls:[]
+          thumbnail: { path: 'http://Superman', extension: 'jpg' },
+          urls: []
         }
-      ],
+      ]
     };
   });
 

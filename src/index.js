@@ -1,14 +1,14 @@
-import registerServiceWorker from "./registerServiceWorker";
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import logger from "redux-logger";
-import thunk from "redux-thunk";
-import reducer from "./redux/reducer";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
+import registerServiceWorker from './registerServiceWorker';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import reducer from './redux/reducer';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 
-import App from "./component/app/app.component";
+import App from './component/app/app.component';
 
 const reduxDebugger =
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
@@ -25,6 +25,6 @@ ReactDOM.render(
       <App />
     </BrowserRouter>
   </Provider>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 registerServiceWorker();

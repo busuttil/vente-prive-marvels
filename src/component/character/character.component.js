@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import _ from 'lodash';
 import {
   CharacterCard,
   CharacterInfo,
   CharacterDetail,
   CharacterDetailLink
-} from "./character.styles";
+} from './character.styles';
 
 const buttonHandler = url => event => {
   event.preventDefault();
@@ -29,9 +29,7 @@ const Character = ({ name, picture, characterId, urls }) => (
   <CharacterCard to={`/${characterId}`} picture={picture}>
     <CharacterInfo>
       <h1>{name}</h1>
-      <CharacterDetail>
-        {renderButton(urls)}
-      </CharacterDetail>
+      <CharacterDetail>{renderButton(urls)}</CharacterDetail>
     </CharacterInfo>
   </CharacterCard>
 );

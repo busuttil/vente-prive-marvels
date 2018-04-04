@@ -1,7 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Character from "../character.component";
-import { CharacterCard, CharacterInfo, CharacterDetail } from "../character.styles";
+import Character from '../character.component';
+import {
+  CharacterCard,
+  CharacterInfo,
+  CharacterDetail
+} from '../character.styles';
 
 describe('Character', () => {
   let props;
@@ -12,8 +16,8 @@ describe('Character', () => {
       picture: 'https//fakeBatman.jpg',
       characterId: 1,
       urls: [
-        {type: 'details', url: 'http://marvel.com/characters/1/Batman'},
-        {type: 'comics',url: 'http://marvel.com/characters/1/Batman'}
+        { type: 'details', url: 'http://marvel.com/characters/1/Batman' },
+        { type: 'comics', url: 'http://marvel.com/characters/1/Batman' }
       ]
     };
   });
@@ -25,7 +29,7 @@ describe('Character', () => {
   });
 
   it('render CharacterCard class', () => {
-    props = { to:'/1',  picture: 'https//fakeBatman.jpg' };
+    props = { to: '/1', picture: 'https//fakeBatman.jpg' };
     expect(shallow(<CharacterCard {...props} />)).toMatchSnapshot();
   });
 
@@ -37,4 +41,3 @@ describe('Character', () => {
     expect(shallow(<CharacterDetail />)).toMatchSnapshot();
   });
 });
-

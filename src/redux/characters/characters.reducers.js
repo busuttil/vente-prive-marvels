@@ -1,8 +1,8 @@
-import { LOAD_CHARACTERS, LOAD_CHARACTER_INFO } from "./characters.actions";
+import { LOAD_CHARACTERS, LOAD_CHARACTER_INFO } from './characters.actions';
 
 const initialState = {
   list: [],
-  details: {},
+  details: {}
 };
 
 export default (state = initialState, action) => {

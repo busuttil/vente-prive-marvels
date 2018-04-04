@@ -1,7 +1,7 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import ListCharacters from "./listCharacters/listCharacters.connector";
-import CharacterInfo from "./characterInfo/characterInfo.connector";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import ListCharacters from './listCharacters/listCharacters.connector';
+import CharacterInfo from './characterInfo/characterInfo.connector';
 
 const Main = () => (
   <main>

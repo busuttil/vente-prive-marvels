@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import {Link} from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const GoBackButton = styled(Link)`
   position: absolute;
   left: 20px;
   top: 20px;
-  
+
   display: flex;
   width: 25px;
   height: 25px;
@@ -13,7 +13,6 @@ export const GoBackButton = styled(Link)`
   background-color: white;
   border-radius: 50%;
 `;
-
 
 export const Goback = styled.img`
   width: 15px;
@@ -27,7 +26,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  
+
   margin-top: 10vh;
 `;
 
@@ -36,16 +35,15 @@ export const WrapperCharacterInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-   max-width: 760px;
-   
+
+  max-width: 760px;
+
   margin: auto;
-  
+
   @media (max-width: 1024px) {
     margin: 20px;
   }
 `;
-
 
 export const CharacterPicture = styled.img`
   width: 33.3%;
@@ -65,7 +63,7 @@ export const CharacterDescription = styled.p`
 export const CategoryList = styled.ul`
   margin: 20px;
   width: 100%;
-      
+
   @media (max-width: 1024px) {
     padding-left: 0;
   }

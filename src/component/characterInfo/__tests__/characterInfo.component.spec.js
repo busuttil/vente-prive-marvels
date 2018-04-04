@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CharacterInfo from "../characterInfo.component";
+import CharacterInfo from '../characterInfo.component';
 import {
   Wrapper,
   CharacterPicture,
@@ -10,8 +10,8 @@ import {
   CategoryListTitle,
   GoBackButton,
   Goback
-} from "../characterInfo.styles";
-import { AnimateLoader } from "../../loader/loader.styles";
+} from '../characterInfo.styles';
+import { AnimateLoader } from '../../loader/loader.styles';
 
 describe('CharacterInfo', () => {
   let props;
@@ -21,27 +21,34 @@ describe('CharacterInfo', () => {
       loadCharacterInfoActions: jest.fn(),
       character: {
         name: 'Batman',
-        description: 'Batman is a fictional superhero appearing in American comic books',
+        description:
+          'Batman is a fictional superhero appearing in American comic books',
         comics: {
-          items: [{
-            resourceURI: 'https://gateway.marvel.com/v1/public/comics/1',
-            name: "Batman vs Superman"
-          }]
+          items: [
+            {
+              resourceURI: 'https://gateway.marvel.com/v1/public/comics/1',
+              name: 'Batman vs Superman'
+            }
+          ]
         },
         stories: {
-          items: [{
-            resourceURI: 'https://gateway.marvel.com/v1/public/comics/1',
-            name: "Batman vs Superman"
-          }]
+          items: [
+            {
+              resourceURI: 'https://gateway.marvel.com/v1/public/comics/1',
+              name: 'Batman vs Superman'
+            }
+          ]
         },
         series: {
-          items: [{
-            resourceURI: 'https://gateway.marvel.com/v1/public/comics/1',
-            name: "Batman vs Superman"
-          }]
+          items: [
+            {
+              resourceURI: 'https://gateway.marvel.com/v1/public/comics/1',
+              name: 'Batman vs Superman'
+            }
+          ]
         },
         thumbnail: 'https//fakeBatman.jpg'
-      },
+      }
     };
   });
 
@@ -56,7 +63,7 @@ describe('CharacterInfo', () => {
   });
 
   it('render GoBackButton class', () => {
-    props = {to: '/'};
+    props = { to: '/' };
 
     expect(shallow(<GoBackButton {...props} />)).toMatchSnapshot();
   });

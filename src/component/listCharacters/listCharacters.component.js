@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import _ from "lodash";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import _ from 'lodash';
 
-import Character from "../character/character.component";
-import { ListCharactersWrapper } from "./listCharacters.styles";
+import Character from '../character/character.component';
+import { ListCharactersWrapper } from './listCharacters.styles';
 
 class ListCharacters extends Component {
   componentDidMount() {
@@ -15,7 +15,15 @@ class ListCharacters extends Component {
       const { id, name, thumbnail } = character;
       const picture = `${thumbnail.path}.${thumbnail.extension}`;
 
-      return <Character key={id} name={name} picture={picture} characterId={id} urls={character.urls} />;
+      return (
+        <Character
+          key={id}
+          name={name}
+          picture={picture}
+          characterId={id}
+          urls={character.urls}
+        />
+      );
     });
 
   render() {
