@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterInfo render AnimateLoader class 1`] = `
+.c0 {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  -webkit-animation: iVXCSc 2s linear infinite;
+  animation: iVXCSc 2s linear infinite;
+}
+
+<img
+  className="c0"
+/>
+`;
+
+exports[`CharacterInfo render CategoryList class 1`] = `
+.c0 {
+  margin: 20px;
+  width: 100%;
+}
+
+.c0 li {
+  list-style: none;
+  color: white;
+}
+
+@media (max-width:1024px) {
+  .c0 {
+    padding-left: 0;
+  }
+}
+
+<ul
+  className="c0"
+/>
+`;
+
+exports[`CharacterInfo render CategoryListTitle class 1`] = `
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 18px;
+  color: #b50f16;
+  text-transform: uppercase;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`CharacterInfo render Character page 1`] = `
+<styled.div>
+  <Styled(Link)
+    to="/"
+  >
+    <styled.img
+      alt="go back"
+      src="go-back.svg"
+    />
+  </Styled(Link)>
+  <styled.div>
+    <styled.img
+      alt="Batman"
+      src="undefined.undefined"
+    />
+    <styled.h1>
+      Batman
+    </styled.h1>
+    <styled.p>
+      Batman is a fictional superhero appearing in American comic books
+    </styled.p>
+    <styled.ul>
+      <styled.span>
+        Comics
+      </styled.span>
+      <li
+        key="Batman vs Superman"
+      >
+        Batman vs Superman
+      </li>
+    </styled.ul>
+    <styled.ul>
+      <styled.span>
+        Stories
+      </styled.span>
+      <li
+        key="Batman vs Superman"
+      >
+        Batman vs Superman
+      </li>
+    </styled.ul>
+    <styled.ul>
+      <styled.span>
+        Series
+      </styled.span>
+      <li
+        key="Batman vs Superman"
+      >
+        Batman vs Superman
+      </li>
+    </styled.ul>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`CharacterInfo render CharacterDescription class 1`] = `
+.c0 {
+  color: white;
+  text-align: center;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`CharacterInfo render CharacterPicture class 1`] = `
+.c0 {
+  width: 33.3%;
+  max-height: 400px;
+  margin: auto;
+}
+
+<img
+  className="c0"
+/>
+`;
+
+exports[`CharacterInfo render CharacterTitle class 1`] = `
+.c0 {
+  color: #b50f16;
+}
+
+<h1
+  className="c0"
+/>
+`;
+
+exports[`CharacterInfo render GoBackButton class 1`] = `
+.c0 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+<Link
+  className="c0"
+  replace={false}
+  to="/"
+/>
+`;
+
+exports[`CharacterInfo render Goback class 1`] = `
+.c0 {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+
+<img
+  className="c0"
+/>
+`;
+
+exports[`CharacterInfo render Wrapper class 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 10vh;
+}
+
+<div
+  className="c0"
+/>
+`;

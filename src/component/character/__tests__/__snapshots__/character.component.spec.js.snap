@@ -3,7 +3,7 @@
 exports[`Character render Character page 1`] = `
 <Styled(Link)
   picture="https//fakeBatman.jpg"
-  to="/"
+  to="/1"
 >
   <styled.div>
     <h1>

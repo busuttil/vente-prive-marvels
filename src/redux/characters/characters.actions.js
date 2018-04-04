@@ -36,3 +36,24 @@ export const loadCharacters = () => dispatch => {
       });
   });
 };
+
+
+export const LOAD_CHARACTER_INFO = "LOAD_CHARACTER_INFO";
+export const loadCharacterInfo = id => dispatch => {
+  return new Promise(resolve => {
+    request
+      .get(
+        `${BASE_URL}${URI_CHARACTERS}/${id}?ts=${getTimestamp()}&apikey=${API_PUBLIC}&hash=${queryParams()}`
+      )
+      .end((err, res) => {
+        const character = res.body.data.results[0];
+
+        resolve(id, character);
+        return dispatch({
+          type: LOAD_CHARACTER_INFO,
+          id,
+          character
+        });
+      });
+  });
+};

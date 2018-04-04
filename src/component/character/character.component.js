@@ -26,7 +26,7 @@ const renderButton = urls =>
   ));
 
 const Character = ({ name, picture, characterId, urls }) => (
-  <CharacterCard to='/' picture={picture}>
+  <CharacterCard to={`/${characterId}`} picture={picture}>
     <CharacterInfo>
       <h1>{name}</h1>
       <CharacterDetail>

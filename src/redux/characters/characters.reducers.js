@@ -1,7 +1,8 @@
-import { LOAD_CHARACTERS } from "./characters.actions";
+import { LOAD_CHARACTERS, LOAD_CHARACTER_INFO } from "./characters.actions";
 
 const initialState = {
   list: [],
+  details: {},
 };
 
 export default (state = initialState, action) => {
@@ -12,6 +13,17 @@ export default (state = initialState, action) => {
       return {
         ...state,
         list: [...characters]
+      };
+    }
+    case LOAD_CHARACTER_INFO: {
+      const { character, id } = action;
+
+      return {
+        ...state,
+        details: {
+          ...state.details,
+          [id]: character
+        }
       };
     }
 
